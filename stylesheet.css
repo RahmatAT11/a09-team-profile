@@ -33,7 +33,8 @@ header {
 }
 
 .containerheader {
-  width:1170px;
+  max-width:1170px;
+  width: 100%;
   margin:auto;
 }
 .logokita {
@@ -71,4 +72,12 @@ header {
 .tombolheaderlogin:hover{
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+
+/* Nyoba header responsif di hp*/
+.menu-icon{
+    display: none;
+}
+/* Nyoba header responsif di hp selesai*/
+
 /* Bagian Safira selesai */
