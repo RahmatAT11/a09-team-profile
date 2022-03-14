@@ -1,3 +1,23 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +28,7 @@ html,body {
 }
 
 /* Bagian Safira */
-.header {
+header {
   background-color: rgba(34, 49, 52, 0.9);
   height: 65px;
   width: 100%;
@@ -18,12 +38,13 @@ html,body {
 }
 
 .containerheader {
-  width:1170px;
+  max-width:1170px;
+  width: 100%;
   margin:auto;
 }
-.logo {
+.logokita {
   width: 124px;
-  margin-top: 20px;
+  margin-top: 6px;
 }
 
 .header-left {
@@ -31,9 +52,13 @@ html,body {
 }
 
 .header-right {
-  float: right;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
+    float: right;
+    background-color: rgba(34, 49, 52, 0);
+    transition: all 0.5s;
+}
+
+.tombolheaderlogin {
+    background-color: rgba(34, 49, 52, 0.3);
 }
 
 .header-right a {
@@ -41,16 +66,25 @@ html,body {
   padding-left:25px;
   padding-right: 25px;
   line-height: 65px;
-  display: block;
-}
-
-li{
-    list-style: none;
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 10px;
 }
 
 .tombolheader:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
+.tombolheaderlogin:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Nyoba header responsif di hp*/
+.menu-icon{
+    display: none;
+}
+/* Nyoba header responsif di hp selesai*/
+
 /* Bagian Safira selesai */
 
 
