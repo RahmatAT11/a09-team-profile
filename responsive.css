@@ -1,20 +1,187 @@
-/* Nyoba header responsif di hp*/
-@media (max-width: 670px) {
-        .header-right {
-                display: none;
-            }
-        .menu-icon {
-            display: block;
-            float: right;
-            color: white;
-            line-height: 65px;
-            z-index: 11;
-        }
-
-        .containerheader {
-            width: 100%;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+/* Tablet */
+@media screen and (max-width: 1023px) {
+    header .container .logo {
+      font-size: 1.6em;
     }
-/* Nyoba header responsif di hp selesai */
+  
+    header .container nav {
+      width: 70%;
+    }
+  
+    header .container nav ul li a {
+      font-size: 1em;
+      padding: none;
+      border-radius: none;
+    }
+  
+    main {
+      height: calc(min-content + 72px);
+    }
+  
+    main p {
+      font-size: 16px;
+      padding-bottom: 4px;
+    }
+  
+    section .container h1 {
+      font-size: 32px;
+    }
+  
+    section .container h2 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+  
+    section .container p {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+  
+    section#about_us {
+      height: auto;
+    }
+  
+    section#about_us .container {
+      margin: 100px auto;
+      height: max-content;
+    }
+  
+    section#about_us .container .container-galery .thumbnail {
+      width: 30%;
+    }
+  
+    section#contact {
+      height: auto;
+    }
+  
+    section#contact .container {
+      margin-top: 100px;
+      height: max-content;
+      margin-bottom: 200px;
+    }
+  
+    footer {
+      font-size: 12px;
+    }
+  }
+  
+  /* Smartphone */
+  @media all and (max-width: 767px) {
+    header .container nav {
+      position: absolute;
+      right: -100%;
+      top: 0;
+      /* width: 60%; */
+      height: 100vh;
+      z-index: -1;
+      transition: all 1s;
+    }
+  
+    header .container nav ul {
+      right: inherit;
+      top: inherit;
+      flex-direction: column;
+      background-color: #f9f7f7;
+      height: inherit;
+      justify-content: space-evenly;
+      transition: all 1s;
+      opacity: 0;
+    }
+  
+    header .container nav ul li a {
+      padding: 16px 32px;
+      border: 2px solid #76aeee;
+      border-radius: 8px;
+      box-shadow: 0px 4px 0px #76aeee;
+      transition: all 0.3s;
+    }
+  
+    header .container nav ul li a:active {
+      background-color: #76aeee;
+      color: #f9f7f7;
+      position: relative;
+      top: 4px;
+      box-shadow: 0px 0px 0px #76aeee;
+    }
+  
+    .menu-toggle {
+      display: flex;
+      cursor: pointer;
+    }
+  
+    input:checked ~ nav {
+      right: 0;
+    }
+  
+    input:checked ~ nav ul {
+      opacity: 1;
+    }
+  
+    main {
+      max-height: none;
+    }
+  
+    main .container {
+      max-height: none;
+    }
+  
+    main p {
+      font-size: 16px;
+    }
+  
+    section {
+      height: max-content;
+      max-height: none;
+    }
+  
+    section#about-us .container {
+      align-items: center;
+      height: max-content;
+      max-height: none;
+      margin: 96px auto;
+      padding-bottom: 36px;
+    }
+  
+    section#about-us .container h2 {
+      text-align: center;
+    }
+  
+    section#about-us .container p {
+      text-align: justify;
+    }
+  
+    section .container h2 {
+      font-size: 20px;
+    }
+  
+    section .container p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+  
+    section#about_us .container {
+      align-items: center;
+      text-align: center;
+    }
+  
+    section#about_us .container .container-galery .thumbnail {
+      width: 90%;
+    }
+  
+    section#contact .container {
+      margin-bottom: 300px;
+      text-align: center;
+    }
+  
+    section#contact .container .socmed-container {
+      flex-direction: column;
+    }
+  
+    footer {
+      font-size: 12px;
+      line-height: 18px;
+      padding: 12px 0;
+    }
+  }
+  
